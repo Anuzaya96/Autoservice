@@ -1,0 +1,9 @@
+{% extends 'autoservice/base.html' %}
+{% block title %}All orders{{ block.super }}{% endblock title %}
+{% block content %}
+    <h1>{{ orders_count }} Orders </h1>
+    <ul> 
+        {% for order in order_list %}
+        <li><a href="{% url 'order' order.pk %}">{{ order.date }}</a> - {{ order.total }}</li>
+        {% endfor %}
+{% endblock content %}

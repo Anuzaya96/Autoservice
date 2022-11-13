@@ -1,0 +1,16 @@
+{% extends 'autoservice/base.html' %}
+{% block title %} {{ object }}{% endblock title %}
+{% block content %}
+    <h1> {{object.date}}</h1>
+    <h3> {{object.total}}</h3>
+    <p> {{object.car}} </p>
+    {% comment %} {% if object.order %}
+        <p> Order line: {{ object.total.all|join", "}} {% endcomment %}
+            {% comment %} {% for order in object.order.all %}
+                <span class="order">{{ order }}</span>
+            {% endfor %} {% endcomment %}
+        {% comment %} </p>
+    {% endif %} {% endcomment %}
+
+
+{% endblock content %} 
