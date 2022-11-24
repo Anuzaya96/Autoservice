@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-24 07:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
+
+#: .\autoservice\models.py:12
+msgid "make"
+msgstr "markė"
+
+#: .\autoservice\models.py:13
+msgid "model"
+msgstr "modelis"
+
+#: .\autoservice\models.py:14
+msgid "year"
+msgstr "metai"
+
+#: .\autoservice\models.py:15
+msgid "engine"
+msgstr "variklis"
+
+#: .\autoservice\models.py:30
+msgid "car model"
+msgstr "mašinos modėlis"
+
+#: .\autoservice\models.py:34
+msgid "license plate"
+msgstr "valstybinis numeris"
+
+#: .\autoservice\models.py:35
+msgid "VIN number"
+msgstr "numeriai"
+
+#: .\autoservice\models.py:36
+msgid "client name"
+msgstr "kliento vardas"
+
+#: .\autoservice\models.py:37
+msgid "non standart parts"
+msgstr "ne standartines dalys"
+
+#: .\autoservice\models.py:39
+msgid "cover"
+msgstr "viršelis"
+
+#: .\autoservice\models.py:46
+msgid "name"
+msgstr "pavadinimas"
+
+#: .\autoservice\models.py:47 .\autoservice\models.py:120
+msgid "price"
+msgstr "kaina"
+
+#: .\autoservice\models.py:55
+msgid "new"
+msgstr "naujas užsakymas"
+
+#: .\autoservice\models.py:56
+msgid "advance payemnt taken"
+msgstr "paimtas avansas"
+
+#: .\autoservice\models.py:57
+msgid "ordered parts"
+msgstr "užsakytos dalys"
+
+#: .\autoservice\models.py:58
+msgid "working"
+msgstr "remontuojamas"
+
+#: .\autoservice\models.py:59
+msgid "done"
+msgstr "atlikta"
+
+#: .\autoservice\models.py:60
+msgid "cancelled"
+msgstr "atšaukta"
+
+#: .\autoservice\models.py:61
+msgid "paid"
+msgstr "sumokėta"
+
+#: .\autoservice\models.py:65
+msgid "car"
+msgstr "mašina"
+
+#: .\autoservice\models.py:69
+msgid "total amount"
+msgstr "viso"
+
+#: .\autoservice\models.py:70
+#: .\autoservice\templates\autoservice\order_detail.html:5
+msgid "date"
+msgstr "data"
+
+#: .\autoservice\models.py:71
+msgid "status"
+msgstr "statusas"
+
+#: .\autoservice\models.py:72
+msgid "estimate date"
+msgstr "numatoma data"
+
+#: .\autoservice\models.py:76 .\autoservice\models.py:136
+msgid "user"
+msgstr "vartotojas"
+
+#: .\autoservice\models.py:109 .\autoservice\models.py:135
+msgid "order"
+msgstr "užsakymas"
+
+#: .\autoservice\models.py:115
+msgid "service"
+msgstr "paslauga"
+
+#: .\autoservice\models.py:119
+msgid "quantity"
+msgstr "kiekis"
+
+#: .\autoservice\models.py:137
+msgid "notes"
+msgstr "užrašai"
+
+#: .\autoservice\models.py:138
+msgid "created_at"
+msgstr "sukurta"
+
+#: .\autoservice\templates\autoservice\car_info.html:5
+msgid "Car info"
+msgstr "Mašinos duomenys"
+
+#: .\autoservice\templates\autoservice\car_info.html:7
+msgid "Owner"
+msgstr "savininkas"
+
+#: .\autoservice\templates\autoservice\car_info.html:8
+msgid "Car model"
+msgstr "mašinos modėlis"
+
+#: .\autoservice\templates\autoservice\car_info.html:9
+msgid "Plate:"
+msgstr "valstybinis numeris"
+
+#: .\autoservice\templates\autoservice\car_info.html:10
+msgid "VIN:"
+msgstr "mašinos numeriai"
+
+#: .\autoservice\templates\autoservice\car_info.html:11
+msgid "Non-standart parts:"
+msgstr "ne standartines dalys"
+
+#: .\autoservice\templates\autoservice\cars.html:3
+msgid "All cars"
+msgstr "Visos mašinos"
+
+#: .\autoservice\templates\autoservice\cars.html:5
+msgid "Cars:"
+msgstr "Mašinos"
+
+#: .\autoservice\templates\autoservice\index.html:3
+msgid "Login to"
+msgstr "prisijungti"
+
+#: .\autoservice\templates\autoservice\index.html:5
+msgid "Autoservice"
+msgstr "Autoservisas"
+
+#: .\autoservice\templates\autoservice\index.html:7
+msgid "Total cars in autoservice"
+msgstr "Viso mašinų autoservise"
+
+#: .\autoservice\templates\autoservice\index.html:8
+msgid "Total orders"
+msgstr "Viso užsakymų"
+
+#: .\autoservice\templates\autoservice\index.html:9
+msgid "Total services provided"
+msgstr "Viso paslaugų suteikta"
+
+#: .\autoservice\templates\autoservice\index.html:10
+msgid "Visits"
+msgstr "Visitai"
+
+#: .\autoservice\templates\autoservice\order_detail.html:5
+msgid "Order"
+msgstr "užsakymas"
+
+#: .\autoservice\templates\autoservice\order_detail.html:6
+msgid "Total"
+msgstr "Viso:"
+
+#: .\autoservice\templates\autoservice\order_detail.html:7
+msgid "Car"
+msgstr "mašina"
+
+#: .\autoservice\templates\autoservice\order_detail.html:8
+msgid "Return date"
+msgstr "Grąžinimo data"
+
+#: .\autoservice\templates\autoservice\order_detail.html:14
+msgid "Reviews"
+msgstr "Peržiūros"
+
+#: .\autoservice\templates\autoservice\order_detail.html:20
+msgid "Post"
+msgstr "Palikite atsiliepimą"
+
+#: .\autoservice\templates\autoservice\order_list.html:3
+#| msgid "Total orders"
+msgid "All orders"
+msgstr "Viso užsakymų"
+
+#: .\autoservice\templates\autoservice\order_list.html:5
+#| msgid "Order"
+msgid "Orders"
+msgstr "Užsakymai"
+
+#: .\autoservice\templates\autoservice\user_order_create.html:3
+msgid "Make a new order"
+msgstr "Naujas užsakymas"
+
+#: .\autoservice\templates\autoservice\user_order_create.html:5
+msgid "Make an order"
+msgstr "Užsakyti"
+
+#: .\autoservice\templates\autoservice\user_order_create.html:11
+#, fuzzy
+#| msgid "created_at"
+msgid "Create"
+msgstr "sukurta"

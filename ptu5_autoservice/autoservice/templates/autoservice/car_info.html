@@ -1,10 +1,13 @@
 {% extends 'autoservice/base.html' %}
+{% load i18n %}
 {% block title %} {{car}} {{ block.super }}{% endblock title %}
 {% block content %}
-<h1>Car info: </h1>
-<p>Owner:  {{car.client}} </p>
-<p>Car model: {{car.car_model}}</p>
-<p>Plate: {{car.plate}}</p>
-<p>VIN: {{car.vin}}</p>
+<h1>{% trans "Car info" %}: </h1>
+
+<p>{% trans "Owner" %}:  {{car.client}} </p>
+<p>{% trans "Car model" %}: {{car.car_model}}</p>
+<p>{% trans "Plate:" %} {{car.plate}}</p>
+<p>{% trans "VIN:" %} {{car.vin}}</p>
+<p>{% trans "Non-standart parts:" %} {{car.non_standart_parts |safe}} </p>
 
 {% endblock content %}

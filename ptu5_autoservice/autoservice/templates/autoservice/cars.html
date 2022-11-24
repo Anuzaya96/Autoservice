@@ -1,10 +1,23 @@
 {% extends 'autoservice/base.html' %}
-{% block title %}All cars{{ block.super }}{% endblock title %}
+{% load i18n %}
+{% block title %}{% trans "All cars" %}:{{ block.super }}{% endblock title %}
 {% block content %}
-  <h1>Cars: </h1>
+  <h1>{% trans "Cars:" %} </h1>
+{% with cars as page_obj %} 
+{% include 'autoservice/includes/paginator_search.html' %}
+{% endwith %}
   <ul>
     {% for car in cars %}
-      <li><a href="{% url 'car_info' car.id %}"> {{ car }} </a></li>
+      <li class="car">
+        <a href="{% url 'car_info' car.id %}">
+           {% if car.cover %}
+              <img src="{{ car.cover.url }}">
+           {% else %}
+              <img src="{% static 'autoservice/img/cover.png' %}">
+           {% endif %}
+          {{ car }} 
+        </a>
+      </li>
     {% endfor %}
   </ul>
   {% endblock content %}

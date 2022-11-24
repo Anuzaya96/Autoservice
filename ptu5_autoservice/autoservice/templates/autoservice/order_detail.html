@@ -1,13 +1,37 @@
 {% extends 'autoservice/base.html' %}
+{% load i18n %}
 {% block title %} {{ object }}{% endblock title %}
 {% block content %}
-    <h1> {{object.date}}</h1>
-    <h3> {{object.total}}</h3>
-    <p> {{object.car}} </p>
+    <h1>{% trans "Order" %} {{order.id}}, {% trans "date" %}: {{object.date}}</h1>
+    <h3>{% trans "Total" %}: {{object.total}}</h3>
+    <p> {% trans "Car" %}: {{object.car}} </p>
+    <p> {% trans "Return date" %}: {{object.return_date}}</p>
     <ul>
         {% for order_line in object.order_lines.all %}
         <li> {{ order_line }}</li>
         {% endfor %}
-
     </ul>
-{% endblock content %} 
+    <h3>{% trans "Reviews" %}</h3>
+    {% if user.is_authenticated %}
+        <div class="review-form">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <p><button type="submit">{% trans "Post" %}</button></p>
+            </form>
+        </div>
+    {% endif %}
+    {% if object.reviews %}
+    <ul>
+        {% for review in object.reviews.all %}
+            <div class="order-review">
+                <h4>{% if review.user.profile.photo %} 
+                        <img src="{{ review.user.profile.photo.url }}">
+                    {% endif %}
+                 {{ review.user }} <span class="float-right">{{ review.created_at }}</h4></span> </h4>
+                <p> {{ review.notes }}</p>
+            </div>
+        {% endfor %}
+    </ul>
+    {% endif %}
+{% endblock content %}

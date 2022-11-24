@@ -1,0 +1,14 @@
+{% extends 'autoservice/base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Make a new order" %} {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>{% trans "Make an order" %}</h1>
+{% comment %} <div class="table-grid form-grid"> {% endcomment %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><button type="submit">{% trans "Create" %}</button></p>
+        <div>
+    </form>
+{% comment %} </div> {% endcomment %}
+{% endblock content %}
